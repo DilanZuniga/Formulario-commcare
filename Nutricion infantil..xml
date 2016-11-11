@@ -1,0 +1,889 @@
+<h:html xmlns:h="http://www.w3.org/1999/xhtml" xmlns:orx="http://openrosa.org/jr/xforms" xmlns="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:vellum="http://commcarehq.org/xforms/vellum">
+	<h:head>
+		<h:title>Nutrici&#243;n infantil.</h:title>
+		<model>
+			<instance>
+				<data xmlns:jrm="http://dev.commcarehq.org/jr/xforms" xmlns="http://openrosa.org/formdesigner/D398E039-8A7A-4C98-85E0-0A66540B700C" uiVersion="1" version="1" name="Nutrici&#243;n infantil.">
+					<located/>
+					<community/>
+					<child_number/>
+					<questions jr:template="">
+						<child_gender/>
+						<dob/>
+						<show_age_months/>
+						<child_weight/>
+						<child_muac/>
+						<child_sam/>
+						<child_mam/>
+						<child_at_risk/>
+						<child_well_nourished/>
+						<zscore_lookup/>
+						<age_months/>
+						<num_child/>
+					</questions>
+				</data>
+			</instance>
+			<instance id="chart"><zscore>
+  <gender id="m">
+    <month id="0">
+      <weight high="2.1" low="0">-3</weight>
+      <weight high="2.5" low="2.1">-2</weight>
+      <weight high="2.9" low="2.5">-1</weight>
+      <weight high="none" low="2.9">0</weight>
+    </month>
+    <month id="1">
+      <weight high="2.9" low="0">-3</weight>
+      <weight high="3.4" low="2.9">-2</weight>
+      <weight high="3.9" low="3.4">-1</weight>
+      <weight high="none" low="3.9">0</weight>
+    </month>
+    <month id="2">
+      <weight high="3.8" low="0">-3</weight>
+      <weight high="4.3" low="3.8">-2</weight>
+      <weight high="4.9" low="4.3">-1</weight>
+      <weight high="none" low="4.9">0</weight>
+    </month>
+    <month id="3">
+      <weight high="4.4" low="0">-3</weight>
+      <weight high="5.0" low="4.4">-2</weight>
+      <weight high="5.7" low="5.0">-1</weight>
+      <weight high="none" low="5.7">0</weight>
+    </month>
+    <month id="4">
+      <weight high="4.9" low="0">-3</weight>
+      <weight high="5.6" low="4.9">-2</weight>
+      <weight high="6.2" low="5.6">-1</weight>
+      <weight high="none" low="6.2">0</weight>
+    </month>
+    <month id="5">
+      <weight high="5.3" low="0">-3</weight>
+      <weight high="6.0" low="5.3">-2</weight>
+      <weight high="6.7" low="6.0">-1</weight>
+      <weight high="none" low="6.7">0</weight>
+    </month>
+    <month id="6">
+      <weight high="5.7" low="0">-3</weight>
+      <weight high="6.4" low="5.7">-2</weight>
+      <weight high="7.1" low="6.4">-1</weight>
+      <weight high="none" low="7.1">0</weight>
+    </month>
+    <month id="7">
+      <weight high="5.9" low="0">-3</weight>
+      <weight high="6.7" low="5.9">-2</weight>
+      <weight high="7.4" low="6.7">-1</weight>
+      <weight high="none" low="7.4">0</weight>
+    </month>
+    <month id="8">
+      <weight high="6.2" low="0">-3</weight>
+      <weight high="6.9" low="6.2">-2</weight>
+      <weight high="7.7" low="6.9">-1</weight>
+      <weight high="none" low="7.7">0</weight>
+    </month>
+    <month id="9">
+      <weight high="6.4" low="0">-3</weight>
+      <weight high="7.1" low="6.4">-2</weight>
+      <weight high="8.0" low="7.1">-1</weight>
+      <weight high="none" low="8.0">0</weight>
+    </month>
+    <month id="10">
+      <weight high="6.6" low="0">-3</weight>
+      <weight high="7.4" low="6.6">-2</weight>
+      <weight high="8.2" low="7.4">-1</weight>
+      <weight high="none" low="8.2">0</weight>
+    </month>
+    <month id="11">
+      <weight high="6.8" low="0">-3</weight>
+      <weight high="7.6" low="6.8">-2</weight>
+      <weight high="8.4" low="7.6">-1</weight>
+      <weight high="none" low="8.4">0</weight>
+    </month>
+    <month id="12">
+      <weight high="6.9" low="0">-3</weight>
+      <weight high="7.7" low="6.9">-2</weight>
+      <weight high="8.6" low="7.7">-1</weight>
+      <weight high="none" low="8.6">0</weight>
+    </month>
+    <month id="13">
+      <weight high="7.1" low="0">-3</weight>
+      <weight high="7.9" low="7.1">-2</weight>
+      <weight high="8.8" low="7.9">-1</weight>
+      <weight high="none" low="8.8">0</weight>
+    </month>
+    <month id="14">
+      <weight high="7.2" low="0">-3</weight>
+      <weight high="8.1" low="7.2">-2</weight>
+      <weight high="9.0" low="8.1">-1</weight>
+      <weight high="none" low="9.0">0</weight>
+    </month>
+    <month id="15">
+      <weight high="7.4" low="0">-3</weight>
+      <weight high="8.3" low="7.4">-2</weight>
+      <weight high="9.2" low="8.3">-1</weight>
+      <weight high="none" low="9.2">0</weight>
+    </month>
+    <month id="16">
+      <weight high="7.5" low="0">-3</weight>
+      <weight high="8.4" low="7.5">-2</weight>
+      <weight high="9.4" low="8.4">-1</weight>
+      <weight high="none" low="9.4">0</weight>
+    </month>
+    <month id="17">
+      <weight high="7.7" low="0">-3</weight>
+      <weight high="8.6" low="7.7">-2</weight>
+      <weight high="9.6" low="8.6">-1</weight>
+      <weight high="none" low="9.6">0</weight>
+    </month>
+    <month id="18">
+      <weight high="7.8" low="0">-3</weight>
+      <weight high="8.8" low="7.8">-2</weight>
+      <weight high="9.8" low="8.8">-1</weight>
+      <weight high="none" low="9.8">0</weight>
+    </month>
+    <month id="19">
+      <weight high="8.0" low="0">-3</weight>
+      <weight high="8.9" low="8.0">-2</weight>
+      <weight high="10.0" low="8.9">-1</weight>
+      <weight high="none" low="10.0">0</weight>
+    </month>
+    <month id="20">
+      <weight high="8.1" low="0">-3</weight>
+      <weight high="9.1" low="8.1">-2</weight>
+      <weight high="10.1" low="9.1">-1</weight>
+      <weight high="none" low="10.1">0</weight>
+    </month>
+    <month id="21">
+      <weight high="8.2" low="0">-3</weight>
+      <weight high="9.2" low="8.2">-2</weight>
+      <weight high="10.3" low="9.2">-1</weight>
+      <weight high="none" low="10.3">0</weight>
+    </month>
+    <month id="22">
+      <weight high="8.4" low="0">-3</weight>
+      <weight high="9.4" low="8.4">-2</weight>
+      <weight high="10.5" low="9.4">-1</weight>
+      <weight high="none" low="10.5">0</weight>
+    </month>
+    <month id="23">
+      <weight high="8.5" low="0">-3</weight>
+      <weight high="9.5" low="8.5">-2</weight>
+      <weight high="10.7" low="9.5">-1</weight>
+      <weight high="none" low="10.7">0</weight>
+    </month>
+    <month id="24">
+      <weight high="8.6" low="0">-3</weight>
+      <weight high="9.7" low="8.6">-2</weight>
+      <weight high="10.8" low="9.7">-1</weight>
+      <weight high="none" low="10.8">0</weight>
+    </month>
+    <month id="25">
+      <weight high="8.8" low="0">-3</weight>
+      <weight high="9.8" low="8.8">-2</weight>
+      <weight high="11.0" low="9.8">-1</weight>
+      <weight high="none" low="11.0">0</weight>
+    </month>
+    <month id="26">
+      <weight high="8.9" low="0">-3</weight>
+      <weight high="10.0" low="8.9">-2</weight>
+      <weight high="11.2" low="10.0">-1</weight>
+      <weight high="none" low="11.2">0</weight>
+    </month>
+    <month id="27">
+      <weight high="9.0" low="0">-3</weight>
+      <weight high="10.1" low="9.0">-2</weight>
+      <weight high="11.3" low="10.1">-1</weight>
+      <weight high="none" low="11.3">0</weight>
+    </month>
+    <month id="28">
+      <weight high="9.1" low="0">-3</weight>
+      <weight high="10.2" low="9.1">-2</weight>
+      <weight high="11.5" low="10.2">-1</weight>
+      <weight high="none" low="11.5">0</weight>
+    </month>
+    <month id="29">
+      <weight high="9.2" low="0">-3</weight>
+      <weight high="10.4" low="9.2">-2</weight>
+      <weight high="11.7" low="10.4">-1</weight>
+      <weight high="none" low="11.7">0</weight>
+    </month>
+    <month id="30">
+      <weight high="9.4" low="0">-3</weight>
+      <weight high="10.5" low="9.4">-2</weight>
+      <weight high="11.8" low="10.5">-1</weight>
+      <weight high="none" low="11.8">0</weight>
+    </month>
+    <month id="31">
+      <weight high="9.5" low="0">-3</weight>
+      <weight high="10.7" low="9.5">-2</weight>
+      <weight high="12.0" low="10.7">-1</weight>
+      <weight high="none" low="12.0">0</weight>
+    </month>
+    <month id="32">
+      <weight high="9.6" low="0">-3</weight>
+      <weight high="10.8" low="9.6">-2</weight>
+      <weight high="12.1" low="10.8">-1</weight>
+      <weight high="none" low="12.1">0</weight>
+    </month>
+    <month id="33">
+      <weight high="9.7" low="0">-3</weight>
+      <weight high="10.9" low="9.7">-2</weight>
+      <weight high="12.3" low="10.9">-1</weight>
+      <weight high="none" low="12.3">0</weight>
+    </month>
+    <month id="34">
+      <weight high="9.8" low="0">-3</weight>
+      <weight high="11.0" low="9.8">-2</weight>
+      <weight high="12.4" low="11.0">-1</weight>
+      <weight high="none" low="12.4">0</weight>
+    </month>
+    <month id="35">
+      <weight high="9.9" low="0">-3</weight>
+      <weight high="11.2" low="9.9">-2</weight>
+      <weight high="12.6" low="11.2">-1</weight>
+      <weight high="none" low="12.6">0</weight>
+    </month>
+    <month id="36">
+      <weight high="10.0" low="0">-3</weight>
+      <weight high="11.3" low="10.0">-2</weight>
+      <weight high="12.7" low="11.3">-1</weight>
+      <weight high="none" low="12.7">0</weight>
+    </month>
+    <month id="37">
+      <weight high="10.1" low="0">-3</weight>
+      <weight high="11.4" low="10.1">-2</weight>
+      <weight high="12.9" low="11.4">-1</weight>
+      <weight high="none" low="12.9">0</weight>
+    </month>
+    <month id="38">
+      <weight high="10.2" low="0">-3</weight>
+      <weight high="11.5" low="10.2">-2</weight>
+      <weight high="13.0" low="11.5">-1</weight>
+      <weight high="none" low="13.0">0</weight>
+    </month>
+    <month id="39">
+      <weight high="10.3" low="0">-3</weight>
+      <weight high="11.6" low="10.3">-2</weight>
+      <weight high="13.1" low="11.6">-1</weight>
+      <weight high="none" low="13.1">0</weight>
+    </month>
+    <month id="40">
+      <weight high="10.4" low="0">-3</weight>
+      <weight high="11.8" low="10.4">-2</weight>
+      <weight high="13.3" low="11.8">-1</weight>
+      <weight high="none" low="13.3">0</weight>
+    </month>
+    <month id="41">
+      <weight high="10.5" low="0">-3</weight>
+      <weight high="11.9" low="10.5">-2</weight>
+      <weight high="13.4" low="11.9">-1</weight>
+      <weight high="none" low="13.4">0</weight>
+    </month>
+    <month id="42">
+      <weight high="10.6" low="0">-3</weight>
+      <weight high="12.0" low="10.6">-2</weight>
+      <weight high="13.6" low="12.0">-1</weight>
+      <weight high="none" low="13.6">0</weight>
+    </month>
+    <month id="43">
+      <weight high="10.7" low="0">-3</weight>
+      <weight high="12.1" low="10.7">-2</weight>
+      <weight high="13.7" low="12.1">-1</weight>
+      <weight high="none" low="13.7">0</weight>
+    </month>
+    <month id="44">
+      <weight high="10.8" low="0">-3</weight>
+      <weight high="12.2" low="10.8">-2</weight>
+      <weight high="13.8" low="12.2">-1</weight>
+      <weight high="none" low="13.8">0</weight>
+    </month>
+    <month id="45">
+      <weight high="10.9" low="0">-3</weight>
+      <weight high="12.4" low="10.9">-2</weight>
+      <weight high="14.0" low="12.4">-1</weight>
+      <weight high="none" low="14.0">0</weight>
+    </month>
+    <month id="46">
+      <weight high="11.0" low="0">-3</weight>
+      <weight high="12.5" low="11.0">-2</weight>
+      <weight high="14.1" low="12.5">-1</weight>
+      <weight high="none" low="14.1">0</weight>
+    </month>
+    <month id="47">
+      <weight high="11.1" low="0">-3</weight>
+      <weight high="12.6" low="11.1">-2</weight>
+      <weight high="14.3" low="12.6">-1</weight>
+      <weight high="none" low="14.3">0</weight>
+    </month>
+    <month id="48">
+      <weight high="11.2" low="0">-3</weight>
+      <weight high="12.7" low="11.2">-2</weight>
+      <weight high="14.4" low="12.7">-1</weight>
+      <weight high="none" low="14.4">0</weight>
+    </month>
+    <month id="49">
+      <weight high="11.3" low="0">-3</weight>
+      <weight high="12.8" low="11.3">-2</weight>
+      <weight high="14.5" low="12.8">-1</weight>
+      <weight high="none" low="14.5">0</weight>
+    </month>
+    <month id="50">
+      <weight high="11.4" low="0">-3</weight>
+      <weight high="12.9" low="11.4">-2</weight>
+      <weight high="14.7" low="12.9">-1</weight>
+      <weight high="none" low="14.7">0</weight>
+    </month>
+    <month id="51">
+      <weight high="11.5" low="0">-3</weight>
+      <weight high="13.1" low="11.5">-2</weight>
+      <weight high="14.8" low="13.1">-1</weight>
+      <weight high="none" low="14.8">0</weight>
+    </month>
+    <month id="52">
+      <weight high="11.6" low="0">-3</weight>
+      <weight high="13.2" low="11.6">-2</weight>
+      <weight high="15.0" low="13.2">-1</weight>
+      <weight high="none" low="15.0">0</weight>
+    </month>
+    <month id="53">
+      <weight high="11.7" low="0">-3</weight>
+      <weight high="13.3" low="11.7">-2</weight>
+      <weight high="15.1" low="13.3">-1</weight>
+      <weight high="none" low="15.1">0</weight>
+    </month>
+    <month id="54">
+      <weight high="11.8" low="0">-3</weight>
+      <weight high="13.4" low="11.8">-2</weight>
+      <weight high="15.2" low="13.4">-1</weight>
+      <weight high="none" low="15.2">0</weight>
+    </month>
+    <month id="55">
+      <weight high="11.9" low="0">-3</weight>
+      <weight high="13.5" low="11.9">-2</weight>
+      <weight high="15.4" low="13.5">-1</weight>
+      <weight high="none" low="15.4">0</weight>
+    </month>
+    <month id="56">
+      <weight high="12.0" low="0">-3</weight>
+      <weight high="13.6" low="12.0">-2</weight>
+      <weight high="15.5" low="13.6">-1</weight>
+      <weight high="none" low="15.5">0</weight>
+    </month>
+    <month id="57">
+      <weight high="12.1" low="0">-3</weight>
+      <weight high="13.7" low="12.1">-2</weight>
+      <weight high="15.6" low="13.7">-1</weight>
+      <weight high="none" low="15.6">0</weight>
+    </month>
+    <month id="58">
+      <weight high="12.2" low="0">-3</weight>
+      <weight high="13.8" low="12.2">-2</weight>
+      <weight high="15.8" low="13.8">-1</weight>
+      <weight high="none" low="15.8">0</weight>
+    </month>
+    <month id="59">
+      <weight high="12.3" low="0">-3</weight>
+      <weight high="14.0" low="12.3">-2</weight>
+      <weight high="15.9" low="14.0">-1</weight>
+      <weight high="none" low="15.9">0</weight>
+    </month>
+    <month id="60">
+      <weight high="12.4" low="0">-3</weight>
+      <weight high="14.1" low="12.4">-2</weight>
+      <weight high="16.0" low="14.1">-1</weight>
+      <weight high="none" low="16.0">0</weight>
+    </month>
+  </gender>
+  <gender id="f">
+    <month id="0">
+      <weight high="2.0" low="0">-3</weight>
+      <weight high="2.4" low="2.0">-2</weight>
+      <weight high="2.8" low="2.4">-1</weight>
+      <weight high="none" low="2.8">0</weight>
+    </month>
+    <month id="1">
+      <weight high="2.7" low="0">-3</weight>
+      <weight high="3.2" low="2.7">-2</weight>
+      <weight high="3.6" low="3.2">-1</weight>
+      <weight high="none" low="3.6">0</weight>
+    </month>
+    <month id="2">
+      <weight high="3.4" low="0">-3</weight>
+      <weight high="3.9" low="3.4">-2</weight>
+      <weight high="4.5" low="3.9">-1</weight>
+      <weight high="none" low="4.5">0</weight>
+    </month>
+    <month id="3">
+      <weight high="4.0" low="0">-3</weight>
+      <weight high="4.5" low="4.0">-2</weight>
+      <weight high="5.2" low="4.5">-1</weight>
+      <weight high="none" low="5.2">0</weight>
+    </month>
+    <month id="4">
+      <weight high="4.4" low="0">-3</weight>
+      <weight high="5.0" low="4.4">-2</weight>
+      <weight high="5.7" low="5.0">-1</weight>
+      <weight high="none" low="5.7">0</weight>
+    </month>
+    <month id="5">
+      <weight high="4.8" low="0">-3</weight>
+      <weight high="5.4" low="4.8">-2</weight>
+      <weight high="6.1" low="5.4">-1</weight>
+      <weight high="none" low="6.1">0</weight>
+    </month>
+    <month id="6">
+      <weight high="5.1" low="0">-3</weight>
+      <weight high="5.7" low="5.1">-2</weight>
+      <weight high="6.5" low="5.7">-1</weight>
+      <weight high="none" low="6.5">0</weight>
+    </month>
+    <month id="7">
+      <weight high="5.3" low="0">-3</weight>
+      <weight high="6.0" low="5.3">-2</weight>
+      <weight high="6.8" low="6.0">-1</weight>
+      <weight high="none" low="6.8">0</weight>
+    </month>
+    <month id="8">
+      <weight high="5.6" low="0">-3</weight>
+      <weight high="6.3" low="5.6">-2</weight>
+      <weight high="7.0" low="6.3">-1</weight>
+      <weight high="none" low="7.0">0</weight>
+    </month>
+    <month id="9">
+      <weight high="5.8" low="0">-3</weight>
+      <weight high="6.5" low="5.8">-2</weight>
+      <weight high="7.3" low="6.5">-1</weight>
+      <weight high="none" low="7.3">0</weight>
+    </month>
+    <month id="10">
+      <weight high="5.9" low="0">-3</weight>
+      <weight high="6.7" low="5.9">-2</weight>
+      <weight high="7.5" low="6.7">-1</weight>
+      <weight high="none" low="7.5">0</weight>
+    </month>
+    <month id="11">
+      <weight high="6.1" low="0">-3</weight>
+      <weight high="6.9" low="6.1">-2</weight>
+      <weight high="7.7" low="6.9">-1</weight>
+      <weight high="none" low="7.7">0</weight>
+    </month>
+    <month id="12">
+      <weight high="6.3" low="0">-3</weight>
+      <weight high="7.0" low="6.3">-2</weight>
+      <weight high="7.9" low="7.0">-1</weight>
+      <weight high="none" low="7.9">0</weight>
+    </month>
+    <month id="13">
+      <weight high="6.4" low="0">-3</weight>
+      <weight high="7.2" low="6.4">-2</weight>
+      <weight high="8.1" low="7.2">-1</weight>
+      <weight high="none" low="8.1">0</weight>
+    </month>
+    <month id="14">
+      <weight high="6.6" low="0">-3</weight>
+      <weight high="7.4" low="6.6">-2</weight>
+      <weight high="8.3" low="7.4">-1</weight>
+      <weight high="none" low="8.3">0</weight>
+    </month>
+    <month id="15">
+      <weight high="6.7" low="0">-3</weight>
+      <weight high="7.6" low="6.7">-2</weight>
+      <weight high="8.5" low="7.6">-1</weight>
+      <weight high="none" low="8.5">0</weight>
+    </month>
+    <month id="16">
+      <weight high="6.9" low="0">-3</weight>
+      <weight high="7.7" low="6.9">-2</weight>
+      <weight high="8.7" low="7.7">-1</weight>
+      <weight high="none" low="8.7">0</weight>
+    </month>
+    <month id="17">
+      <weight high="7.0" low="0">-3</weight>
+      <weight high="7.9" low="7.0">-2</weight>
+      <weight high="8.9" low="7.9">-1</weight>
+      <weight high="none" low="8.9">0</weight>
+    </month>
+    <month id="18">
+      <weight high="7.2" low="0">-3</weight>
+      <weight high="8.1" low="7.2">-2</weight>
+      <weight high="9.1" low="8.1">-1</weight>
+      <weight high="none" low="9.1">0</weight>
+    </month>
+    <month id="19">
+      <weight high="7.3" low="0">-3</weight>
+      <weight high="8.2" low="7.3">-2</weight>
+      <weight high="9.2" low="8.2">-1</weight>
+      <weight high="none" low="9.2">0</weight>
+    </month>
+    <month id="20">
+      <weight high="7.5" low="0">-3</weight>
+      <weight high="8.4" low="7.5">-2</weight>
+      <weight high="9.4" low="8.4">-1</weight>
+      <weight high="none" low="9.4">0</weight>
+    </month>
+    <month id="21">
+      <weight high="7.6" low="0">-3</weight>
+      <weight high="8.6" low="7.6">-2</weight>
+      <weight high="9.6" low="8.6">-1</weight>
+      <weight high="none" low="9.6">0</weight>
+    </month>
+    <month id="22">
+      <weight high="7.8" low="0">-3</weight>
+      <weight high="8.7" low="7.8">-2</weight>
+      <weight high="9.8" low="8.7">-1</weight>
+      <weight high="none" low="9.8">0</weight>
+    </month>
+    <month id="23">
+      <weight high="7.9" low="0">-3</weight>
+      <weight high="8.9" low="7.9">-2</weight>
+      <weight high="10.0" low="8.9">-1</weight>
+      <weight high="none" low="10.0">0</weight>
+    </month>
+    <month id="24">
+      <weight high="8.1" low="0">-3</weight>
+      <weight high="9.0" low="8.1">-2</weight>
+      <weight high="10.2" low="9.0">-1</weight>
+      <weight high="none" low="10.2">0</weight>
+    </month>
+    <month id="25">
+      <weight high="8.2" low="0">-3</weight>
+      <weight high="9.2" low="8.2">-2</weight>
+      <weight high="10.3" low="9.2">-1</weight>
+      <weight high="none" low="10.3">0</weight>
+    </month>
+    <month id="26">
+      <weight high="8.4" low="0">-3</weight>
+      <weight high="9.4" low="8.4">-2</weight>
+      <weight high="10.5" low="9.4">-1</weight>
+      <weight high="none" low="10.5">0</weight>
+    </month>
+    <month id="27">
+      <weight high="8.5" low="0">-3</weight>
+      <weight high="9.5" low="8.5">-2</weight>
+      <weight high="10.7" low="9.5">-1</weight>
+      <weight high="none" low="10.7">0</weight>
+    </month>
+    <month id="28">
+      <weight high="8.6" low="0">-3</weight>
+      <weight high="9.7" low="8.6">-2</weight>
+      <weight high="10.9" low="9.7">-1</weight>
+      <weight high="none" low="10.9">0</weight>
+    </month>
+    <month id="29">
+      <weight high="8.8" low="0">-3</weight>
+      <weight high="9.8" low="8.8">-2</weight>
+      <weight high="11.1" low="9.8">-1</weight>
+      <weight high="none" low="11.1">0</weight>
+    </month>
+    <month id="30">
+      <weight high="8.9" low="0">-3</weight>
+      <weight high="10.0" low="8.9">-2</weight>
+      <weight high="11.2" low="10.0">-1</weight>
+      <weight high="none" low="11.2">0</weight>
+    </month>
+    <month id="31">
+      <weight high="9.0" low="0">-3</weight>
+      <weight high="10.1" low="9.0">-2</weight>
+      <weight high="11.4" low="10.1">-1</weight>
+      <weight high="none" low="11.4">0</weight>
+    </month>
+    <month id="32">
+      <weight high="9.1" low="0">-3</weight>
+      <weight high="10.3" low="9.1">-2</weight>
+      <weight high="11.6" low="10.3">-1</weight>
+      <weight high="none" low="11.6">0</weight>
+    </month>
+    <month id="33">
+      <weight high="9.3" low="0">-3</weight>
+      <weight high="10.4" low="9.3">-2</weight>
+      <weight high="11.7" low="10.4">-1</weight>
+      <weight high="none" low="11.7">0</weight>
+    </month>
+    <month id="34">
+      <weight high="9.4" low="0">-3</weight>
+      <weight high="10.5" low="9.4">-2</weight>
+      <weight high="11.9" low="10.5">-1</weight>
+      <weight high="none" low="11.9">0</weight>
+    </month>
+    <month id="35">
+      <weight high="9.5" low="0">-3</weight>
+      <weight high="10.7" low="9.5">-2</weight>
+      <weight high="12.0" low="10.7">-1</weight>
+      <weight high="none" low="12.0">0</weight>
+    </month>
+    <month id="36">
+      <weight high="9.6" low="0">-3</weight>
+      <weight high="10.8" low="9.6">-2</weight>
+      <weight high="12.2" low="10.8">-1</weight>
+      <weight high="none" low="12.2">0</weight>
+    </month>
+    <month id="37">
+      <weight high="9.7" low="0">-3</weight>
+      <weight high="10.9" low="9.7">-2</weight>
+      <weight high="12.4" low="10.9">-1</weight>
+      <weight high="none" low="12.4">0</weight>
+    </month>
+    <month id="38">
+      <weight high="9.8" low="0">-3</weight>
+      <weight high="11.1" low="9.8">-2</weight>
+      <weight high="12.5" low="11.1">-1</weight>
+      <weight high="none" low="12.5">0</weight>
+    </month>
+    <month id="39">
+      <weight high="9.9" low="0">-3</weight>
+      <weight high="11.2" low="9.9">-2</weight>
+      <weight high="12.7" low="11.2">-1</weight>
+      <weight high="none" low="12.7">0</weight>
+    </month>
+    <month id="40">
+      <weight high="10.1" low="0">-3</weight>
+      <weight high="11.3" low="10.1">-2</weight>
+      <weight high="12.8" low="11.3">-1</weight>
+      <weight high="none" low="12.8">0</weight>
+    </month>
+    <month id="41">
+      <weight high="10.2" low="0">-3</weight>
+      <weight high="11.5" low="10.2">-2</weight>
+      <weight high="13.0" low="11.5">-1</weight>
+      <weight high="none" low="13.0">0</weight>
+    </month>
+    <month id="42">
+      <weight high="10.3" low="0">-3</weight>
+      <weight high="11.6" low="10.3">-2</weight>
+      <weight high="13.1" low="11.6">-1</weight>
+      <weight high="none" low="13.1">0</weight>
+    </month>
+    <month id="43">
+      <weight high="10.4" low="0">-3</weight>
+      <weight high="11.7" low="10.4">-2</weight>
+      <weight high="13.3" low="11.7">-1</weight>
+      <weight high="none" low="13.3">0</weight>
+    </month>
+    <month id="44">
+      <weight high="10.5" low="0">-3</weight>
+      <weight high="11.8" low="10.5">-2</weight>
+      <weight high="13.4" low="11.8">-1</weight>
+      <weight high="none" low="13.4">0</weight>
+    </month>
+    <month id="45">
+      <weight high="10.6" low="0">-3</weight>
+      <weight high="12.0" low="10.6">-2</weight>
+      <weight high="13.6" low="12.0">-1</weight>
+      <weight high="none" low="13.6">0</weight>
+    </month>
+    <month id="46">
+      <weight high="10.7" low="0">-3</weight>
+      <weight high="12.1" low="10.7">-2</weight>
+      <weight high="13.7" low="12.1">-1</weight>
+      <weight high="none" low="13.7">0</weight>
+    </month>
+    <month id="47">
+      <weight high="10.8" low="0">-3</weight>
+      <weight high="12.2" low="10.8">-2</weight>
+      <weight high="13.9" low="12.2">-1</weight>
+      <weight high="none" low="13.9">0</weight>
+    </month>
+    <month id="48">
+      <weight high="10.9" low="0">-3</weight>
+      <weight high="12.3" low="10.9">-2</weight>
+      <weight high="14.0" low="12.3">-1</weight>
+      <weight high="none" low="14.0">0</weight>
+    </month>
+    <month id="49">
+      <weight high="11.0" low="0">-3</weight>
+      <weight high="12.4" low="11.0">-2</weight>
+      <weight high="14.2" low="12.4">-1</weight>
+      <weight high="none" low="14.2">0</weight>
+    </month>
+    <month id="50">
+      <weight high="11.1" low="0">-3</weight>
+      <weight high="12.6" low="11.1">-2</weight>
+      <weight high="14.3" low="12.6">-1</weight>
+      <weight high="none" low="14.3">0</weight>
+    </month>
+    <month id="51">
+      <weight high="11.2" low="0">-3</weight>
+      <weight high="12.7" low="11.2">-2</weight>
+      <weight high="14.5" low="12.7">-1</weight>
+      <weight high="none" low="14.5">0</weight>
+    </month>
+    <month id="52">
+      <weight high="11.3" low="0">-3</weight>
+      <weight high="12.8" low="11.3">-2</weight>
+      <weight high="14.6" low="12.8">-1</weight>
+      <weight high="none" low="14.6">0</weight>
+    </month>
+    <month id="53">
+      <weight high="11.4" low="0">-3</weight>
+      <weight high="12.9" low="11.4">-2</weight>
+      <weight high="14.8" low="12.9">-1</weight>
+      <weight high="none" low="14.8">0</weight>
+    </month>
+    <month id="54">
+      <weight high="11.5" low="0">-3</weight>
+      <weight high="13.0" low="11.5">-2</weight>
+      <weight high="14.9" low="13.0">-1</weight>
+      <weight high="none" low="14.9">0</weight>
+    </month>
+    <month id="55">
+      <weight high="11.6" low="0">-3</weight>
+      <weight high="13.2" low="11.6">-2</weight>
+      <weight high="15.1" low="13.2">-1</weight>
+      <weight high="none" low="15.1">0</weight>
+    </month>
+    <month id="56">
+      <weight high="11.7" low="0">-3</weight>
+      <weight high="13.3" low="11.7">-2</weight>
+      <weight high="15.2" low="13.3">-1</weight>
+      <weight high="none" low="15.2">0</weight>
+    </month>
+    <month id="57">
+      <weight high="11.8" low="0">-3</weight>
+      <weight high="13.4" low="11.8">-2</weight>
+      <weight high="15.3" low="13.4">-1</weight>
+      <weight high="none" low="15.3">0</weight>
+    </month>
+    <month id="58">
+      <weight high="11.9" low="0">-3</weight>
+      <weight high="13.5" low="11.9">-2</weight>
+      <weight high="15.5" low="13.5">-1</weight>
+      <weight high="none" low="15.5">0</weight>
+    </month>
+    <month id="59">
+      <weight high="12.0" low="0">-3</weight>
+      <weight high="13.6" low="12.0">-2</weight>
+      <weight high="15.6" low="13.6">-1</weight>
+      <weight high="none" low="15.6">0</weight>
+    </month>
+    <month id="60">
+      <weight high="12.1" low="0">-3</weight>
+      <weight high="13.7" low="12.1">-2</weight>
+      <weight high="15.8" low="13.7">-1</weight>
+      <weight high="none" low="15.8">0</weight>
+    </month>
+  </gender>
+</zscore></instance>
+			<bind vellum:nodeset="#form/located" nodeset="/data/located" type="geopoint"/>
+			<bind vellum:nodeset="#form/community" nodeset="/data/community" type="xsd:string" required="true()"/>
+			<bind vellum:nodeset="#form/child_number" nodeset="/data/child_number" type="xsd:int" required="true()"/>
+			<bind vellum:nodeset="#form/questions" nodeset="/data/questions"/>
+			<bind vellum:nodeset="#form/questions/child_gender" nodeset="/data/questions/child_gender" required="true()"/>
+			<bind vellum:nodeset="#form/questions/dob" nodeset="/data/questions/dob" type="xsd:date" constraint=". &gt; (today() - 1825) and . &lt; today()" required="true()"/>
+			<bind vellum:nodeset="#form/questions/show_age_months" nodeset="/data/questions/show_age_months"/>
+			<bind vellum:nodeset="#form/questions/child_weight" nodeset="/data/questions/child_weight" type="xsd:double" required="true()"/>
+			<bind vellum:nodeset="#form/questions/child_muac" nodeset="/data/questions/child_muac" type="xsd:int" required="true()"/>
+			<bind vellum:nodeset="#form/questions/child_sam" nodeset="/data/questions/child_sam" vellum:relevant="#form/questions/child_muac &lt;= 110 or #form/questions/zscore_lookup = -3" relevant="/data/questions/child_muac &lt;= 110 or /data/questions/zscore_lookup = -3"/>
+			<bind vellum:nodeset="#form/questions/child_mam" nodeset="/data/questions/child_mam" vellum:relevant="#form/questions/child_muac &gt; 110 and #form/questions/child_muac &lt;= 125 or #form/questions/zscore_lookup = -2" relevant="/data/questions/child_muac &gt; 110 and /data/questions/child_muac &lt;= 125 or /data/questions/zscore_lookup = -2"/>
+			<bind vellum:nodeset="#form/questions/child_at_risk" nodeset="/data/questions/child_at_risk" vellum:relevant="#form/questions/child_muac &gt; 125 and #form/questions/child_muac &lt;= 135 or #form/questions/zscore_lookup = -1" relevant="/data/questions/child_muac &gt; 125 and /data/questions/child_muac &lt;= 135 or /data/questions/zscore_lookup = -1"/>
+			<bind vellum:nodeset="#form/questions/child_well_nourished" nodeset="/data/questions/child_well_nourished" vellum:relevant="#form/questions/child_muac &gt; 135" relevant="/data/questions/child_muac &gt; 135"/>
+			<bind vellum:nodeset="#form/questions/zscore_lookup" nodeset="/data/questions/zscore_lookup" vellum:calculate="if(count(instance('chart')/zscore/gender[@id = #form/questions/child_gender]/month[@id = #form/questions/age_months]/weight[@low &lt; #form/questions/child_weight][@high = 'none' or @high &gt;= #form/questions/child_weight]) = 1, instance('chart')/zscore/gender[@id = #form/questions/child_gender]/month[@id = #form/questions/age_months]/weight[@low &lt; #form/questions/child_weight][@high = 'none' or @high &gt;= #form/questions/child_weight], 'invalid entry')" calculate="if(count(instance('chart')/zscore/gender[@id = /data/questions/child_gender]/month[@id = /data/questions/age_months]/weight[@low &lt; /data/questions/child_weight][@high = 'none' or @high &gt;= /data/questions/child_weight]) = 1, instance('chart')/zscore/gender[@id = /data/questions/child_gender]/month[@id = /data/questions/age_months]/weight[@low &lt; /data/questions/child_weight][@high = 'none' or @high &gt;= /data/questions/child_weight], 'invalid entry')"/>
+			<bind vellum:nodeset="#form/questions/age_months" nodeset="/data/questions/age_months" vellum:calculate="int((today() - #form/questions/dob) div 30)" calculate="int((today() - /data/questions/dob) div 30)"/>
+			<bind vellum:nodeset="#form/questions/num_child" nodeset="/data/questions/num_child" vellum:calculate="#form/child_number" calculate="/data/child_number"/>
+			<itext>
+				<translation lang="es" default="">
+					<text id="located-label">
+						<value>Localizaci&#243;n</value>
+					</text>
+					<text id="community-label">
+						<value>Nombre de comunididad en la que vive.</value>
+					</text>
+					<text id="child_number-label">
+						<value>&#191;Cu&#225;ntos ni&#241;os menores de 5 a&#241;os hay en la vivienda?</value>
+					</text>
+					<text id="questions-label">
+						<value>Informaci&#243;n</value>
+					</text>
+					<text id="questions/child_gender-label">
+						<value>&#191;Genero del infante?</value>
+					</text>
+					<text id="child_name-Male-label">
+						<value>Masculino</value>
+						<value form="image">jr://file/commcare/image/data/questions/child_gender-m.png</value>
+					</text>
+					<text id="child_name-Female-label">
+						<value>Femenino</value>
+						<value form="image">jr://file/commcare/image/data/questions/child_gender-f.png</value>
+					</text>
+					<text id="questions/dob-label">
+						<value>Fecha de nacimiento del infante ( para esta prueba el ni&#241;o tiene que ser menor de 5 a&#241;os )</value>
+					</text>
+					<text id="questions/show_age_months-label">
+						<value>La edad del ni&#241;o en meses es  <output value="/data/questions/age_months" vellum:value="#form/questions/age_months"/>. Si esto no es correcto, por favor regrese y conteste de nuevo.</value>
+					</text>
+					<text id="questions/child_weight-label">
+						<value>Peso del Infante en kilogramo.</value>
+					</text>
+					<text id="questions/child_muac-label">
+						<value>&#191;Que medida di&#243; en el brazalete MUAC ?</value>
+					</text>
+					<text id="questions/child_muac-help">
+						<value/>
+						<value form="image">jr://file/commcare/image/help/data/questions/child_muac.png</value>
+					</text>
+					<text id="questions/child_sam-label">
+						<value>Desnutrici&#243;n aguda grave: Inmediatamente trasladarlo para tratamiento</value>
+					</text>
+					<text id="questions/child_mam-label">
+						<value>Desnutrici&#243;n aguda moderada: Inmediatamente transferirlo para la suplementaci&#243;n.</value>
+					</text>
+					<text id="questions/child_at_risk-label">
+						<value>Ni&#241;o en riesgo de desnutrici&#243;n: proporcionar un cuidado especial y apoyo</value>
+					</text>
+					<text id="questions/child_well_nourished-label">
+						<value>El ni&#241;o tiene una nutrici&#243;n correcta.</value>
+					</text>
+				</translation>
+			</itext>
+		</model>
+	</h:head>
+	<h:body>
+		<input vellum:ref="#form/located" ref="/data/located">
+			<label ref="jr:itext('located-label')"/>
+		</input>
+		<input vellum:ref="#form/community" ref="/data/community">
+			<label ref="jr:itext('community-label')"/>
+		</input>
+		<input vellum:ref="#form/child_number" ref="/data/child_number">
+			<label ref="jr:itext('child_number-label')"/>
+		</input>
+		<group>
+			<label ref="jr:itext('questions-label')"/>
+			<repeat vellum:jr__count="#form/child_number" jr:count="/data/child_number" jr:noAddRemove="true()" vellum:nodeset="#form/questions" nodeset="/data/questions">
+				<select1 vellum:ref="#form/questions/child_gender" ref="/data/questions/child_gender">
+					<label ref="jr:itext('questions/child_gender-label')"/>
+					<item>
+						<label ref="jr:itext('child_name-Male-label')"/>
+						<value>m</value>
+					</item>
+					<item>
+						<label ref="jr:itext('child_name-Female-label')"/>
+						<value>f</value>
+					</item>
+				</select1>
+				<input vellum:ref="#form/questions/dob" ref="/data/questions/dob">
+					<label ref="jr:itext('questions/dob-label')"/>
+				</input>
+				<trigger vellum:ref="#form/questions/show_age_months" ref="/data/questions/show_age_months">
+					<label ref="jr:itext('questions/show_age_months-label')"/>
+				</trigger>
+				<input vellum:ref="#form/questions/child_weight" ref="/data/questions/child_weight">
+					<label ref="jr:itext('questions/child_weight-label')"/>
+				</input>
+				<input vellum:ref="#form/questions/child_muac" ref="/data/questions/child_muac">
+					<label ref="jr:itext('questions/child_muac-label')"/>
+					<help ref="jr:itext('questions/child_muac-help')"/>
+				</input>
+				<trigger vellum:ref="#form/questions/child_sam" ref="/data/questions/child_sam">
+					<label ref="jr:itext('questions/child_sam-label')"/>
+				</trigger>
+				<trigger vellum:ref="#form/questions/child_mam" ref="/data/questions/child_mam">
+					<label ref="jr:itext('questions/child_mam-label')"/>
+				</trigger>
+				<trigger vellum:ref="#form/questions/child_at_risk" ref="/data/questions/child_at_risk">
+					<label ref="jr:itext('questions/child_at_risk-label')"/>
+				</trigger>
+				<trigger vellum:ref="#form/questions/child_well_nourished" ref="/data/questions/child_well_nourished">
+					<label ref="jr:itext('questions/child_well_nourished-label')"/>
+				</trigger>
+			</repeat>
+		</group>
+	</h:body>
+</h:html>
